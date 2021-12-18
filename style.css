@@ -1,0 +1,55 @@
+body{
+    background: #f5f5f5;
+    font-family: 'Merriweather', serif;
+}
+#mother{
+    width: 100%;
+    font-size: 20px;
+}
+main{
+    float: right;
+    border: 1px solid gray;
+    padding: 3px;
+}
+input{
+    padding: 4px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Merriweather', serif;
+}
+aside{
+    text-align: center;
+    width: 300px;
+    float: left;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+    background-color: silver;
+    color: white;
+}
+#tbl{
+    width: 790px;
+    font-size: 15px;
+    text-align: center;
+    border: 1px;
+}
+#tbl:hover{
+    background-color: snow;
+    color: steelblue;
+}
+#tbl th{
+    background-color: silver;
+    font-size: 20px;
+    padding: 10px;
+}
+aside button{
+    width: 190px;
+    padding: 8px;
+    font-size: 17px;
+    margin-top: 3px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+
+    
+}
