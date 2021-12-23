@@ -33,28 +33,20 @@
     if(isset($_POST['address'])){
         $address = $_POST['address'];
     }
+    #add button
     $sqls="";
     if(isset($_POST['add'])){
         $sqls="insert into student value($id,'$name','$address')";
         mysqli_query($con,$sqls);
         header("location: home.php");
     }
+    #delete button
     if(isset($_POST['del'])){
         $sqls="delete from student where name='$name'";
         mysqli_query($con,$sqls);
         header("location: home.php");
     }
-
-    
-    
-    
-    
-    
-    
     ?>
-
-
-
     <div id="mother">
         <form action="" method="POST">
 
@@ -63,7 +55,7 @@
                 <div id="div">
                     <img src="https://assets.clever.com/website/regular_website_content/BTS2020_SpotIllo_StudentHome.png" alt="website logo" width="200">
                     <h3>admin panel</h3>
-                    <label for="">student number</label><br>
+                    <label for="">student id</label><br>
                     <input type="text" name="id" id="id"><br>
                     <label for="">student name</label><br>
                     <input type="text" name="name" id ="name"><br>
@@ -89,9 +81,7 @@
                         echo "<td>" .$row['name']."</td>";
                         echo "<td>" .$row['address']."</td>";
                         echo "</tr>";
-
                     }
-                    
                     ?>
                 </table>
             </main>

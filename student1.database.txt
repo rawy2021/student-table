@@ -1,0 +1,11 @@
+database:
+student1
+-----------
+table
+student
+-----------
+id
+name 
+address
+
+http://localhost/project.student/home.php
